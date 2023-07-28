@@ -1,0 +1,29 @@
+.element{
+    padding: 0 !important;
+}
+#line{
+    border: 2px solid black;
+    height: 2px;
+    
+    border-color: #f30317;
+    position: absolute;
+    top:0px;
+
+    animation-name: one-line;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+
+}
+@keyframes one-line {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+        /* border-color: yellow; */
+    }
+}
+.disabled{
+    pointer-events: none!important;
+}
