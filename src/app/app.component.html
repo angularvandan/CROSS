@@ -1,0 +1,11 @@
+<div class="container pt-3 d-flex flex-column">
+  <h3 class="text-center fst-italic">~ Tick Tak Toa ~</h3>
+  <div  width="fit-content" class=" position-relative mx-auto" >
+    <div class="d-flex" style="width: fit-content;" *ngFor="let ele1 of arr; let i = index">
+      <div class="bg-info border border-danger"  *ngFor="let ele2 of arr[i]; let j = index" style="width: 200px;height: 200px; background-image:url('{{ele2.image}}');background-size: contain;"  [ngClass]="{'disabled':stop}"(click)="onClick(i,j)">
+      </div>
+    </div>
+    <div class=" bg-dark overflow-hidden mx-auto position-absolute"id="line">
+    </div>
+  </div>
+</div>
